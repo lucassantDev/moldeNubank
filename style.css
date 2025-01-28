@@ -32,41 +32,56 @@ body{
         background-color: #711983;
         display: flex;
         align-items: end;
-        justify-content: space-around;
+        justify-content: space-between;
+
     }
 
     #imagemInicio{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 100%;
-        background-color: #ffffff;
-        /* border: 1px solid red; */
+        background-color: #ffffff36;
         margin-bottom: 10px;
+        margin-left: 15px;
+        color: #ffffff;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #iconesInicio{
         display: flex;
-        width: 250px;
+        width: fit-content;
         height: 50px;
-        /* border: 1px solid red; */
-        justify-content: space-evenly;
+        border: 1px solid red;
         margin-bottom: 10px;
+        margin-right: 15px;
 
     }
 
     .icone{
+        scale: 0.8;
         width: 50px;
         height: 100%;
         border-radius: 100%;
-        background-color: #ffffff;
-        /* border: 1px solid red; */
+        background-color: #ffffff27;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* Fim do estilo -> roxoInicio */
 
     #saldo{
         width: 100%;
         height: 100px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+    }
+
+    #esconderSaldo{
+        background-color: blue;
     }
 
     #saldo h1{
@@ -76,10 +91,18 @@ body{
         margin-top: 30px;
     }
 
+    #open p{
+        margin-top: 5px;
+        margin-left: 60px;
+        font-size: 1.2rem;
+        border: 1px solid red;
+        width: 100px;
+    }
+
     #close{
         width: 100px;
         height: 20px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,17 +119,60 @@ body{
     #open{
         width: 100px;
         height: 20px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffffff;
     }
 
-    #open span{
-        margin-left: 10px;
-    }
     /* Fim do estilo -> saldo */
 
-    
+    #funcoes{
+        width: 100%;
+        height: 100px;
+        /* border: 1px solid red; */
+        display: flex;
+
+    }
+
+    .circle{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: gray;
+        margin-left: 6px;
+    }
+    /* Fim do estilo -> funções */
+
+    #cartao{
+        width: 100%;
+        height: 100px;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #iconeCartao{
+        width: 60px;
+        height: 60px;
+        /* border: 1px solid red; */
+        border-radius: 10px 0px 0px 10px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    #objects{
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+        background-color: #ffffff;
+        width: 80%;
+        height: 60px;
+        border-radius: 10px;
+    }
 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/e0b8a276c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>document</title>
 </head>
@@ -14,14 +16,32 @@
    </div>
 
    <div class="telefone">
+
         <div id="roxoInicio">
             <div id="imagemInicio">
-                <!-- imagem -->
+                <!-- foto de perfil -->
+                <i class="fa-regular fa-user"></i>
             </div>
             <div id="iconesInicio">
-                <div class="icone"></div>
-                <div class="icone"></div>
-                <div class="icone"></div>
+                <!-- icone para esconder saldo-->
+                <div id="verSaldo" class="icone">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div> 
+
+                <!-- icone para ver saldo -->
+                <div id="esconderSaldo" class="icone">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+
+                <!-- icone de dúvida -->
+                <div class="icone">
+                    <i class="fa-solid fa-question"></i> 
+                </div>
+
+                <!-- icone de notificação -->
+                <div class="icone">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
             </div>
         </div>
         <!-- FIM DA DIV ROXOINICIO -->
@@ -36,9 +56,53 @@
             </div>
 
             <div id="open">
-                <span>R$ 0,00</span>
+                <div>
+                    <p><B>R$ 0,00</B></p>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DIV SALDO -->
+
+        <div id="funcoes">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <!-- FIM DIV FUNCOES -->
+
+        <div id="cartao">
+            <div id="objects">
+                <div id="iconeCartao">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div><p><b>Meus cartões</b></p></div>
             </div>
         </div>
    </div>
+
+
+   <!-- inicio do JQuery -->
+   <script>
+        $(document).ready(function(){
+            $("#open").hide(); // função para deixar a parte do saldo escondido
+            $("#verSaldo").hide();
+
+            $("#verSaldo").click(function(){
+                $("#open").hide();
+                $("#close").show();
+                $("#esconderSaldo").show();
+                $("#verSaldo").hide();
+            });
+
+            $("#esconderSaldo").click(function(){
+                $("#open").show();
+                $("#close").hide();
+                $("#esconderSaldo").hide();
+                $("#verSaldo").show();
+            });
+        });
+   </script>
 </body>
 </html>
