@@ -130,8 +130,7 @@ body{
         width: 100vw;
         height: 120px;
         display: flex;
-        overflow-x: auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
 
@@ -140,7 +139,7 @@ body{
         max-height: 70px;
         border-radius: 50%;
         background-color: #313030b9;
-        margin-left: 10px;
+        margin-left: 8px;
     }
     /* Fim do estilo -> funções */
 
@@ -218,18 +217,19 @@ body{
         height: 200px;
     }
 
-    #titulo-seta{
+    .titulo-seta{
         width: 100%;
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    #titulo-seta div{
+    .titulo-seta div{
         font-size: 1.2rem;
         color: #ffffff;
         margin-left: 25px;
         margin-right: 20px;
+        margin-top: 20px;
     }
 
     #tituloFatura-saldo{
@@ -239,15 +239,16 @@ body{
     #tituloFatura-saldo #linha1{
         font-size: 1.1rem;
         color: #ffffff;
+        margin-top: 10px;
     }
     #tituloFatura-saldo #linha2{
         font-size: 1rem;
         color: #ffffff;
-        margin-top: 10px;
+        margin-top: 6px;
     }
     #tituloFatura-saldo #linha3{
         font-size: 1rem;
-        color: #313030b9;
+        color: #7c7979b9;
         margin-top: 10px;
 
     }
@@ -261,5 +262,12 @@ body{
         width: 100%;
         height: 150px;
         /* border: 1px solid red; */
+    }
+
+    .Valor-Acompanhamento{
+        font-size: 1rem;
+        color: #7c7979b9;
+        margin-left: 25px;
+        margin-right: 20px;
     }
 }
