@@ -140,12 +140,17 @@ body{
         width: 100vw;
         height: 120px;
         display: flex;
-        /* border: 1px solid red; */
+        border: 1px solid red;
+        overflow-x: auto ;
+    }
+
+    .funcoes::-webkit-scrollbar{
+        width: 0px;
     }
 
 
     .circle{
-        width: 70px;
+        min-width: 70px;
         max-height: 70px;
         border-radius: 50%;
         background-color: #313030b9;
