@@ -89,9 +89,8 @@ body{
 
     #saldo{
         width: 100%;
-        height: 100px;
+        height: 70px;
     }
-
 
     #texto_seta{
         color: #ffffff;
@@ -138,8 +137,9 @@ body{
 
     .funcoes{
         width: 100vw;
-        height: 120px;
+        height: fit-content;
         display: flex;
+        align-items: center;
         overflow-x: auto ;
     }
 
@@ -147,17 +147,36 @@ body{
         width: 0px;
     }
 
+    .infoCircle{
+        width: 120px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
 
-    .circle{
-        min-width: 70px;
-        max-height: 70px;
+    .infoCircle div{
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-color: #313030b9;
-        margin-left: 8px;
+        margin-left: 22px;
+        margin-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.5rem;
     }
+
+    .infoCircle p{
+        font-size: 0.9rem;
+        text-align: center;
+        color: #fff;
+    }
+
     /* Fim do estilo -> funções */
-
-
     #cartao{
         width: 100%;
         height: 200px;
@@ -217,14 +236,12 @@ body{
         background-image: linear-gradient(to left, #3b0d61, #711983);
     }
     
-
     .linha{
        width: 100%;
        height: 2px;
        background-color: #313030b9;
     }
-
-    /* Fim de esstilo -> cartão */
+    /* Fim de estilo -> cartão */
 
     #fatura{
         width: 100%;
@@ -274,7 +291,7 @@ body{
 
     .Emprestimo-Planejamento{
         width: 100%;
-        height: 150px;
+        height: 135px;
     }
 
     .Valor-Acompanhamento{
@@ -336,10 +353,11 @@ body{
 
     .startButton{
         width: 120px;
-        padding: 6px;
+        padding: 10px;
         font-size: 1rem;
+        font-weight: 500;
         border-radius: 25px;
-        background-color: #3b0d61;
+        background: linear-gradient( to left, #3b0d61, #711983);
         color: #ffffff;
         margin-left: 10px;
         margin-top: 10px;
