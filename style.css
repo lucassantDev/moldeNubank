@@ -327,7 +327,8 @@ body{
         border-radius: 10px;
         background-color: #313030b9;
         margin-top: 15px;
-        margin-left: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .imagemBlocos{
